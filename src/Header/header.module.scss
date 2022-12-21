@@ -153,7 +153,7 @@
 
       .navbar {
         position: fixed;
-        top: 0;
+        top: -35%;
         left: 0;
         height: 35%;
         width: 100%;
@@ -165,7 +165,11 @@
         background-color: orange;
         transition: 1s;
         z-index: 2;
-            
+        
+        .responsive_nav {
+          top: 0;
+        }
+
         ul{
           margin-top: 90px;
         }
@@ -186,9 +190,7 @@
         }
       }
 
-      .responsive_nav {
-        left: 0;
-      }
+
 
       .nav_btn {
         width: 40px;
