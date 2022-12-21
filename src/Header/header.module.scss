@@ -17,6 +17,7 @@
       height: 40px;
       margin-left: 120px;
     }
+     
 
     .navbar {
       width: 100%;
@@ -67,6 +68,18 @@
       display: none;
     }
   }
+  .modal {
+    width: 230px;
+    height: 150px;
+    background-color: #f3eeee;
+    z-index: 8;
+    display: none;
+    
+    p{
+      font-size: 18px;
+      color: #000000;
+    }
+   }
 
   .mainBox {
     width: 100%;
@@ -162,7 +175,7 @@
         align-items: center;
         justify-content: center;
         gap: 1.5rem;
-        background-color: orange;
+        background-color: rgb(218, 205, 181);
         transition: 1s;
         z-index: 2;
         

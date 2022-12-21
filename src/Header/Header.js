@@ -6,11 +6,15 @@ import logo from "./imgs/Asset 1@4x 1.png";
 
 function Header() {
   const navRef = useRef();
-
+  const reff = useRef(null);
   const navbar = () => {
     // navRef.current.classList.toggle("responsive_nav");
-    navRef.current.style='top:-35%';
+    navRef.current.style = "top:-35%";
     console.log("Gamburger");
+  };
+
+  const location = () => {
+    reff.current.style = "display:block";
   };
 
   return (
@@ -20,7 +24,7 @@ function Header() {
         <div ref={navRef} className={cls.navbar}>
           <ul>
             <li>
-              Curated Path <AiOutlineDown style={{ fontSize: "10px" }} />
+              Curated Path <AiOutlineDown style={{ fontSize: "10px" }} onMouseEnter={location} />
             </li>
             <li>Online Courses</li>
           </ul>
@@ -32,10 +36,19 @@ function Header() {
             </button>
           </div>
         </div>
-        <AiOutlineBars className={cls.nav_btn} onClick={navbar} style={{ "z-index":"3"}} />
+        <AiOutlineBars className={cls.nav_btn} onClick={navbar} style={{ "z-index": "3" }} />
       </div>
 
-
+      <div ref={reff} className={cls.modal}>
+        <p>Backend Developing</p>
+        <p></p>
+        <p>Flutter Developing</p>
+        <p></p>
+        <p>iOS Developing</p>
+        <p></p>
+        <p>Data Structure</p>
+        <p></p>
+      </div>
 
       <div className={cls.mainBox}>
         <div className={cls.para}>

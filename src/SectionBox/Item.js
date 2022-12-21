@@ -1,0 +1,17 @@
+import React from 'react'
+import cls from "./item.module.scss";
+
+function Item(props)
+{
+    return (
+        <div className={cls.wrapper}>
+            <p>{props.item.title}</p>
+            <h3 className={cls.h}>{props.item.name}</h3>
+            <h4 >{props.item.description}</h4>
+        </div>
+    )
+}
+
+export default Item;
+
+
