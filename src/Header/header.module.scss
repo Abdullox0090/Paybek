@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=PT+Mono&display=swap");
+
+.test {
+  background-color: rgb(207, 236, 244);
+  height: 75vh;
+  width: 100%;
+
+  .header {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 140px;
+      height: 40px;
+      margin-left: 120px;
+    }
+
+    .navbar {
+      width: 100%;
+      height: 60px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      ul {
+        margin-left: 100px;
+
+        li {
+          display: inline-block;
+          padding: 8px 15px;
+          margin: 0 15px;
+          font-size: 16px;
+          font-family: "PT Mono" monospace;
+        }
+      }
+
+      .auth {
+        margin-right: 120px;
+
+        button {
+          padding: 8px 10px;
+          font-size: 16px;
+          margin: 0 20px;
+          border: none;
+        }
+        .login {
+          background-color: #ffffff02;
+          border: 1px solid rgba(27, 27, 27, 0.9);
+          border-radius: 3px;
+        }
+
+        .signBtn {
+          background: #0072ff;
+          border-radius: 3px;
+          color: #ffffff;
+        }
+      }
+    }
+    .nav_btn {
+      display: none;
+    }
+  }
+
+  .mainBox {
+    width: 100%;
+    height: 90%;
+    // min-width: 999px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .para {
+      width: 42%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 40px;
+
+      h1 {
+        // font-size: 38px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 62px;
+        /* or 129% */
+
+        letter-spacing: -0.03em;
+
+        color: #000000;
+      }
+      p {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        /* identical to box height, or 150% */
+
+        /* Object / Black 60 */
+
+        color: rgba(27, 27, 27, 0.6);
+      }
+
+      button {
+        width: 120px;
+        height: 40px;
+        margin-top: 30px;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        background: #0072ff;
+        border-radius: 3px;
+      }
+    }
+
+    .photo {
+      width: 42%;
+      height: 100%;
+      .resbtnJoin {
+        display: none;
+      }
+
+      img {
+        width: 98%;
+        height: 95.5%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 140px;
+        height: 45px;
+        margin-left: 15px;
+      }
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: orange;
+        transition: 1s;
+      }
+
+      .responsive_nav {
+        left: 0;
+      }
+
+      .nav_btn {
+        width: 40px;
+        height: 30px;
+        font-size: 30px;
+        border: none;
+        display: block;
+        margin: 9px 30px 0 0;
+      }
+    }
+    .mainBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .photo {
+        width: 100%;
+        height: 60%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img {
+          width: 90%;
+          height: 100%;
+        }
+        .resbtnJoin {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 150px;
+          padding-bottom: 5px;
+          bottom: 0;
+          background: linear-gradient(
+            180deg,
+            rgba(217, 217, 217, 0) 0%,
+            #ffffff 100%
+          );
+          button {
+            width: 120px;
+            height: 40px;
+            margin-top: 90px;
+            border-radius: 6px;
+            background: blue;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+          }
+        }
+      }
+      .para {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        height: 40%;
+        button {
+          display: none;
+        }
+      }
+    }
+  }
+}

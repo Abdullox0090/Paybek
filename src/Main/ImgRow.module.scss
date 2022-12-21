@@ -1,0 +1,36 @@
+.div {
+  width: 470px;
+  height: 300px;
+  background-color: rgb(188, 32, 227);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  .contenerImg {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    img {
+      width: 98%;
+      height: 90%;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  .title {
+    width: 40%;
+    padding-top: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    p {
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
+}
+
+@media (max-width: 751px) {
+  .div {
+    width: 90%;
+  }
+}
