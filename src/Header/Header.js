@@ -4,12 +4,19 @@ import { AiOutlineDown, AiFillApple, AiOutlineBars } from "react-icons/ai";
 import PersonImg from "./imgs/3333 1 (1).png";
 import logo from "./imgs/Asset 1@4x 1.png";
 
+let togle = true
 function Header() {
   const navRef = useRef();
   const reff = useRef(null);
   const navbar = () => {
-    // navRef.current.classList.toggle("responsive_nav");
-    navRef.current.style = "top:-35%";
+  if(togle){
+    navRef.current.style = "top:0";
+    togle = false
+  }
+  else{
+    navRef.current.style = "top:-300px";
+    togle = true
+  }
     console.log("Gamburger");
   };
 
