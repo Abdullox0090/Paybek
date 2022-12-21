@@ -6,6 +6,7 @@ import backend from "./imgs/backend.png";
 import flutter from "./imgs/Flutter.png";
 import iOS from "./imgs/ios.png";
 import data from "./imgs/Data.png";
+import Section from "../Section/Section";
 function Main() {
   const course = [
     {
@@ -38,11 +39,16 @@ function Main() {
     },
   ];
   return (
-    <div className={mainScss.contener}>
-      {course.map((value) => {
-        return <ImgRow value={value} />;
-      })}
-    </div>
+    <>
+      <div className={mainScss.contener}>
+        {course.map((value) => {
+          return <ImgRow value={value} />;
+        })}
+      </div>
+      <div>
+        <Section />
+      </div>
+    </>
   );
 }
 
