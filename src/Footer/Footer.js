@@ -11,7 +11,7 @@ function Footer() {
 
         <div className={cls.para}>
           
-            <p>Curated Paths </p> <p> Online Training</p>
+            <p>Curated__Paths </p> <p> Online__Training</p>
   
         </div>
         <div className={cls.icons}>
@@ -25,11 +25,11 @@ function Footer() {
 
       <div className={cls.about_bottom}>
         <div>
-          <p>© Copyright 2022, All Rights Reserved</p>
+          <span>© Copyright 2022, </span><span>All Reserved</span>
         </div>
         <div>
-          <span>Curated Paths</span>
-          <span>Online Training</span>
+          <span>Privace Policy</span>
+          <span>Terms $ Conditions</span>
         </div>
       </div>
     </div>
