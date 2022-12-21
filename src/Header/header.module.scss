@@ -35,6 +35,7 @@
           margin: 0 15px;
           font-size: 16px;
           font-family: "PT Mono" monospace;
+          cursor: pointer;
         }
       }
 
@@ -47,6 +48,7 @@
           margin: 0 20px;
           border: none;
         }
+
         .login {
           background-color: #ffffff02;
           border: 1px solid rgba(27, 27, 27, 0.9);
@@ -60,6 +62,7 @@
         }
       }
     }
+
     .nav_btn {
       display: none;
     }
@@ -94,6 +97,7 @@
 
         color: #000000;
       }
+
       p {
         font-family: "Inter";
         font-style: normal;
@@ -123,6 +127,7 @@
     .photo {
       width: 42%;
       height: 99.5%;
+
       .resbtnJoin {
         display: none;
       }
@@ -139,6 +144,7 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
+
       img {
         width: 140px;
         height: 45px;
@@ -148,9 +154,9 @@
       .navbar {
         position: fixed;
         top: 0;
-        left: -100%;
-        height: 100%;
-        width: 50%;
+        left: 0;
+        height: 35%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -158,6 +164,26 @@
         gap: 1.5rem;
         background-color: orange;
         transition: 1s;
+        z-index: 2;
+            
+        ul{
+          margin-top: 90px;
+        }
+        .auth {
+          margin: auto;
+          position: relative;
+          top: -60px;
+          right: 20px;
+
+          .login {
+            border-bottom: 2px solid red;
+            border: none;
+          }
+
+          .signBtn {
+            display: none;
+          }
+        }
       }
 
       .responsive_nav {
@@ -173,11 +199,13 @@
         margin: 9px 30px 0 0;
       }
     }
+
     .mainBox {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+
       .photo {
         width: 100%;
         height: 60%;
@@ -186,11 +214,13 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
         img {
           width: 90%;
           height: 99%;
           object-fit: contain;
         }
+
         .resbtnJoin {
           position: absolute;
           display: flex;
@@ -200,11 +230,10 @@
           height: 150px;
           padding-bottom: 5px;
           bottom: 0;
-          background: linear-gradient(
-            180deg,
-            rgba(217, 217, 217, 0) 0%,
-            #ffffff 100%
-          );
+          background: linear-gradient(180deg,
+              rgba(217, 217, 217, 0) 0%,
+              #ffffff 100%);
+
           button {
             width: 120px;
             height: 40px;
@@ -218,6 +247,7 @@
           }
         }
       }
+
       .para {
         display: flex;
         justify-content: center;
@@ -226,6 +256,11 @@
         text-align: center;
         width: 100%;
         height: 40%;
+
+        h1{
+          font-size:30px ;
+        }
+
         button {
           display: none;
         }
