@@ -4,7 +4,7 @@
   background-color: rgb(207, 236, 244);
   height: 75vh;
   width: 100%;
-
+  position: relative;
   .header {
     display: flex;
     padding-top: 10px;
@@ -17,7 +17,6 @@
       height: 40px;
       margin-left: 120px;
     }
-     
 
     .navbar {
       width: 100%;
@@ -68,18 +67,38 @@
       display: none;
     }
   }
+
+  .modal::before {
+    content: "";
+    margin-top: 0;
+    padding: 10px 13px;
+    background-color: rgb(255, 255, 255);
+    
+    // z-index: -1;
+  }
   .modal {
     width: 230px;
-    height: 150px;
-    background-color: #f3eeee;
-    z-index: 8;
+    // height: 150px;
+    padding: 0 5px 5px 0;
+    background-color: #ffffff;
+    // z-index: 8;
     display: none;
-    
-    p{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 30%;
+    div {
+      padding: 5px;
+      border-bottom: 1px solid black;
+    }
+    .curse_about {
+      font-size: 12px;
+    }
+
+    p {
       font-size: 18px;
       color: #000000;
     }
-   }
+  }
 
   .mainBox {
     width: 100%;
@@ -178,12 +197,12 @@
         background-color: rgb(218, 205, 181);
         transition: 1s;
         z-index: 2;
-        
+
         .responsive_nav {
           top: 0;
         }
 
-        ul{
+        ul {
           margin-top: 90px;
         }
         .auth {
@@ -202,8 +221,6 @@
           }
         }
       }
-
-
 
       .nav_btn {
         width: 40px;
@@ -245,9 +262,11 @@
           height: 150px;
           padding-bottom: 5px;
           bottom: 0;
-          background: linear-gradient(180deg,
-              rgba(217, 217, 217, 0) 0%,
-              #ffffff 100%);
+          background: linear-gradient(
+            180deg,
+            rgba(217, 217, 217, 0) 0%,
+            #ffffff 100%
+          );
 
           button {
             width: 120px;
@@ -272,8 +291,8 @@
         width: 100%;
         height: 40%;
 
-        h1{
-          font-size:30px ;
+        h1 {
+          font-size: 30px;
         }
 
         button {
