@@ -7,6 +7,7 @@ import flutter from "./imgs/Flutter.png";
 import iOS from "./imgs/ios.png";
 import data from "./imgs/Data.png";
 import Section from "../Section/Section";
+import SectionBottom from "../SectionBox/SectionBottom";
 function Main() {
   const course = [
     {
@@ -47,6 +48,9 @@ function Main() {
       </div>
       <div>
         <Section />
+      </div>
+      <div>
+        <SectionBottom/>
       </div>
     </>
   );

@@ -8,7 +8,8 @@ function Header() {
   const navRef = useRef();
 
   const navbar = () => {
-    navRef.current.classList.toggle("responsive_nav");
+    // navRef.current.classList.toggle("responsive_nav");
+    navRef.current.style='top:-35%';
     console.log("Gamburger");
   };
 
@@ -31,8 +32,11 @@ function Header() {
             </button>
           </div>
         </div>
-        <AiOutlineBars className={cls.nav_btn} onClick={navbar} />
+        <AiOutlineBars className={cls.nav_btn} onClick={navbar} style={{ "z-index":"3"}} />
       </div>
+
+
+
       <div className={cls.mainBox}>
         <div className={cls.para}>
           <h1>

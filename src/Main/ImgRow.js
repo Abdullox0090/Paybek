@@ -11,7 +11,7 @@ function ImgRow(Props) {
     >
       <div className={slc.title}>
         <h1>{props.lang}</h1>
-        <p>{props.title}</p>
+         <p>{props.title}</p>
       </div>
 
       <div className={slc.contenerImg}>
