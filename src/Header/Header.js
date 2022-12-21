@@ -13,8 +13,12 @@ function Header() {
     console.log("Gamburger");
   };
 
-  const location = () => {
-    reff.current.style = "display:block";
+  const location = (p) => {
+    if (p) {
+      reff.current.style = "display:block";
+    } else {
+      reff.current.style = "display:none";
+    }
   };
 
   return (
@@ -23,8 +27,19 @@ function Header() {
         <img src={logo} alt="logo-404" />
         <div ref={navRef} className={cls.navbar}>
           <ul>
-            <li>
-              Curated Path <AiOutlineDown style={{ fontSize: "10px" }} onMouseEnter={location} />
+            <li
+              onMouseOver={() => {
+                location(true);
+              }}
+              onMouseLeave={() => {
+                location(false);
+              }}
+            >
+              Curated Path{" "}
+              <AiOutlineDown
+                style={{ fontSize: "10px" }}
+                // onMouseEnter={location}
+              />
             </li>
             <li>Online Courses</li>
           </ul>
@@ -36,18 +51,39 @@ function Header() {
             </button>
           </div>
         </div>
-        <AiOutlineBars className={cls.nav_btn} onClick={navbar} style={{ "z-index": "3" }} />
+        <AiOutlineBars
+          className={cls.nav_btn}
+          onClick={navbar}
+          style={{ "z-index": "3" }}
+        />
       </div>
 
-      <div ref={reff} className={cls.modal}>
-        <p>Backend Developing</p>
-        <p></p>
-        <p>Flutter Developing</p>
-        <p></p>
-        <p>iOS Developing</p>
-        <p></p>
-        <p>Data Structure</p>
-        <p></p>
+      <div
+        ref={reff}
+        className={cls.modal}
+        onMouseOver={() => {
+          location(true);
+        }}
+        onMouseLeave={() => {
+          location(false);
+        }}
+      >
+        <div>
+          <p>Backend Developing</p>
+          <p className={cls.curse_about}>Website and Mobile Programming</p>
+        </div>
+        <div>
+          <p>Flutter Developing</p>
+          <p className={cls.curse_about}>Mobile Programming</p>
+        </div>
+        <div>
+          <p>iOS Developing</p>
+          <p className={cls.curse_about}>Mobile Programming</p>
+        </div>
+        <div>
+          <p>Data Structure</p>
+          <p className={cls.curse_about}>Website and Mobile Programming</p>
+        </div>
       </div>
 
       <div className={cls.mainBox}>
