@@ -38,7 +38,6 @@ function Header() {
               Curated Path{" "}
               <AiOutlineDown
                 style={{ fontSize: "10px" }}
-                // onMouseEnter={location}
               />
             </li>
             <li>Online Courses</li>
