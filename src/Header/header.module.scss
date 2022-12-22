@@ -158,7 +158,9 @@
 
     .photo {
       width: 42%;
-      height: 99.5%;
+      height: 95%;
+      position: relative;
+      border: 1px solid red;
 
       .resbtnJoin {
         display: none;
@@ -166,7 +168,9 @@
 
       img {
         width: 98%;
-        height: 95.5%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
       }
     }
   }
