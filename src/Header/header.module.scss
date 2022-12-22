@@ -160,7 +160,6 @@
       width: 42%;
       height: 95%;
       position: relative;
-      border: 1px solid red;
 
       .resbtnJoin {
         display: none;
@@ -170,7 +169,7 @@
         width: 98%;
         height: 100%;
         position: absolute;
-        bottom: 0;
+        bottom: 0px;
       }
     }
   }
